@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
+import Header from "../components/shared/Header";
+import BaseLayout from "../components/layouts/BaseLayout";
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
   return (
-      <h1>I am index page</h1>
+      <BaseLayout>
+          <h1>I am Home page</h1>
+      </BaseLayout>
   )
 }
 
